@@ -100,7 +100,7 @@ export default function Page() {
             {result.skippedInactive > 0 && ` ${result.skippedInactive} skipped (inactive/unpublished).`}
           </p>
           <p>Generated {new Date(result.generatedAt).toLocaleString()}</p>
-          <a href={result.downloadUrl} download="products-index.json">
+          <a href="/api/latest" download="products-index.json">
             Download products-index.json →
           </a>
         </div>
